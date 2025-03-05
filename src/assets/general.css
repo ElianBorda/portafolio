@@ -1,0 +1,34 @@
+* {
+    font-family: "Inter Tight", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6vw;
+    box-sizing: border-box;
+}
+
+/* @media (min-width: 1517.78px) {
+    * {
+        font-size: 17.77px;
+    }
+}
+
+@media (min-width: 1707.50px) {
+    * {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1821.33px) {
+    * {
+        font-size: 21.33px;
+    }
+}
+
+@media (min-width: 2049px) {
+    * {
+        font-size: 24px;
+    }
+} */

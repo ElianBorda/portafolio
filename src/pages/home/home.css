@@ -1,0 +1,35 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper-intro {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-intro {
+    background-color: rgb(15, 15, 15);
+    width: 45rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-intro h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.8rem;
+}
+
+.block-intro p {
+    letter-spacing: 0.2rem;
+}
+    
