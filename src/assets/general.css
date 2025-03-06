@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 /* @media (min-width: 1517.78px) {
     * {
         font-size: 17.77px;
