@@ -1,13 +1,14 @@
 .wrapper {
     position: relative;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .wrapper-intro {
     position: relative;
     color: white;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,8 +17,8 @@
 }
 
 .block-intro {
-    width: 45rem;
-    height: 20rem;
+    width: 42rem;
+    height: 18rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,9 +27,9 @@
 }
 
 .block-intro h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.6rem;
 }
 
 .block-intro p {
@@ -38,7 +39,7 @@
 .block-vid {
     z-index: -9999;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 }
@@ -52,10 +53,10 @@
 /* ------------------------------------------*/
 
 .wrapper-tec {
-    width: 100vw;
+    position: relative;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
 }

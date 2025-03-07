@@ -17,9 +17,9 @@ const Home = () => {
         <div className='wrapper-intro'>
           <div className='block-vid'>
             {/* <VideoCarrousel videos={videos} /> */}
-            {/* <video autoPlay loop muted playsInline>
+            <video autoPlay loop muted playsInline>
               <source src={vid2} type='video/mp4'></source>
-            </video> */}
+            </video>
           </div>
           <div className='block-intro'>
             <h1>ELIAN BORDA</h1>
@@ -27,7 +27,7 @@ const Home = () => {
           </div>
         </div>
         <div className='wrapper-tec'>
-          
+          Hola
         </div>
       </div>
     </>
