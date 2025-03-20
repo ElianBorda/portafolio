@@ -1,4 +1,4 @@
-import React, { use, useRef } from 'react'
+import React, { use, useEffect, useRef } from 'react'
 import './home.css'
 import vid1 from '../../assets/videos/video1.mp4'
 import vid2 from '../../assets/videos/video2.mp4'
@@ -8,34 +8,18 @@ import Loading from '../../assets/components/loading/Loading'
 import { motion, useScroll, useTransform } from 'motion/react'
 import ContentIntro from './util/ContentIntro'
 import SlideTransition from './util/SlideTransition'
+import WrapperIntro from './util/WrapperIntro'
+import SlideTransitionTopBottom from './util/SlideTransitionTopBottom'
+import ContentAbout from './util/ContentAbout'
+import WrapperAbout from './util/WrapperAbout'
 
 const Home = () => {
-
-  const ref = useRef(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end end"]
-  })
-
-  // const scaleY = useTransform(scrollYProgress, [1,0], [, 0])
-  // const scaleX = useTransform(scrollYProgress, [1,0], [, 0])
   
   return (
     <>
       <Loading />
-      {/* <div className='wrapper'> */}
-        <div className='space-slide' ref={ref}>
-          <div className='wrapper-intro'>
-            <SlideTransition scrollYProgress={scrollYProgress}/>
-            <ContentIntro/>
-          </div>
-        </div>
-        <div className='space-slide-2'>
-          
-        </div>
-        
-
-      {/* </div> */}
+      <WrapperIntro/>
+      <WrapperAbout/>
     </>
   )
 }
