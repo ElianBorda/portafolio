@@ -5,6 +5,44 @@
     overflow-y: auto;
 }
 
+.background {
+    z-index: -10;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    
+}
+
+.bubble {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(0, 150, 255, 0.6));
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 0 0.7rem rgba(255, 255, 255, 0.6), 
+        0 0 0.7rem rgba(0, 150, 255, 0.5); 
+}
+
+  
+.bubble::after {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background: rgba(255, 255, 255, 0.63);
+    border-radius: 50%;
+    position: absolute;
+    top: 0.6rem;
+    left: 0.7rem;
+    filter: blur(0.2rem);
+    opacity: 0.6;
+}
+
 .wrapper-intro {
     position: sticky;
     top: 0;
@@ -34,6 +72,37 @@
     font-weight: 700;
     letter-spacing: 0.5rem;
     text-align: center;
+}
+
+.wrapper-technologies {
+    display: flex;
+    /* background-color: rgb(105, 19, 139); */
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.container-tech {
+    width: 15rem;
+    height: 15rem;
+    background-color: salmon;
+    border-radius: 0.4rem;
+    background: rgba(255, 255, 255, 0.15); /* Fondo semitransparente */
+    backdrop-filter: blur(0.2rem); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(0.2rem); /* Para compatibilidad */
+    border: 0.02rem solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    color: white;
+}
+
+.container-tech > h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    margin: 0.5rem;
 }
 
 .about-content {
@@ -129,7 +198,7 @@
     z-index: -10;
     position: relative;
     width: 100%;
-    height: 200vh;
+    height: 300vh;
     display: flex;
     background-color: saddlebrown;
 }
@@ -137,10 +206,38 @@
 .space-slide-2 {
     z-index: -10;
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 200vh;
+    height: 250vh;
     display: flex;
     background-color: rgb(105, 19, 139);
+}
+
+.slide-technologies{
+    z-index: 9999;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.title-technologies{
+    width: 100%;
+    padding: 2rem;
+}
+
+.title-technologies > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    color: white;
+}
+
+.slide-img > img {
+    width: 100%;
+    height: 100%;
 }
 
 /* ------------------------------------------*/

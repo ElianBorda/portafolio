@@ -1,26 +1,26 @@
 import React, { use, useEffect, useRef } from 'react'
 import './home.css'
-import vid1 from '../../assets/videos/video1.mp4'
-import vid2 from '../../assets/videos/video2.mp4'
-import vid3 from '../../assets/videos/video3.mp4'
-import VideoCarrousel from '../../assets/components/VideoCarrousel'
 import Loading from '../../assets/components/loading/Loading'
-import { motion, useScroll, useTransform } from 'motion/react'
-import ContentIntro from './util/ContentIntro'
-import SlideTransition from './util/SlideTransition'
 import WrapperIntro from './util/WrapperIntro'
-import SlideTransitionTopBottom from './util/SlideTransitionTopBottom'
-import ContentAbout from './util/ContentAbout'
 import WrapperAbout from './util/WrapperAbout'
+import imgdiv2 from '../../assets/imgs/imgDiv2.jpg'
+import ViewTechnologies from './util/ViewTechnologies'
+
 
 const Home = () => {
   
+/** 
+ * Debo tener una seccion de Intro, About, Technologies, Projects, Services, Contact
+ * 
+*/
+
   return (
     <>
       <Loading />
       <WrapperIntro/>
       <WrapperAbout/>
-    </>
+      <ViewTechnologies/>
+    </> 
   )
 }
 
