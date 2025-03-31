@@ -3,6 +3,8 @@ import { motion, useScroll, useTransform } from 'motion/react'
 
 
 const SlideTransition = ({scrollYProgress}) => {
+    
+
   return (
     <div className='content-slide'>
         <motion.div

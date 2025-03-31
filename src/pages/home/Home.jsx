@@ -5,6 +5,8 @@ import WrapperIntro from './util/WrapperIntro'
 import WrapperAbout from './util/WrapperAbout'
 import imgdiv2 from '../../assets/imgs/imgDiv2.jpg'
 import ViewTechnologies from './util/ViewTechnologies'
+import CustomCursor from '../../cursor/CustomCursor'
+import TextCarrousel from './util/TextCarrousel'
 
 
 const Home = () => {
@@ -17,9 +19,12 @@ const Home = () => {
   return (
     <>
       <Loading />
+      <CustomCursor/>
       <WrapperIntro/>
       <WrapperAbout/>
       <ViewTechnologies/>
+      <TextCarrousel/>
+      
     </> 
   )
 }
